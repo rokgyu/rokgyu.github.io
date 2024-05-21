@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+        </title>
+        <style>
+            *{
+                padding:0px;
+                margin:0px;
+            }
+            li{
+                list-style-type: none;
+            }
+            .clear{
+                clear: both; /*float 속성을 없애겠다*/
+            }
+            header{
+                width:90%;
+                height:100px;
+                margin-top: 30px;
+                margin-left: 20px;
+                border-bottom: solid 2px #ccc;
+            }
+            #logo{
+                margin-top: 30px;
+                border-bottom: dotted 2px gray;
+                float: left;
+            }
+            #top{
+                float: right;
+                margin: 30px 20px 0 0;
+            }
+            nav{
+                width: 90%;
+                height: 100px;
+                margin-top: 10px;
+            }
+            nav li{
+                float: left;
+                margin: 20px 30px;
+            }
+            section{
+                height: 400px;
+                float: left;
+                margin-top:20px;
+                margin-bottom: 30px;
+                margin-left: 20px;
+            }
+            aside{
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            aside li{
+                margin-bottom: 70px;
+            }
+            footer{
+                width: 90%;
+                border-top: solid 2px #ccc;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            #address{
+                float: left;
+                margin: 30px 0 0 10px;
+            }
+            #customer{
+                float: right;
+                margin : 30px 0 0 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <div id="logo">
+                    신뢰로 보답하는 루바토 손해보험
+                </div>
+                <div id="top">
+                    로그인 | 회원가입 | 사이드 맵 | 회사소개
+                </div>
+            </header>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>손해보험 상식</li>
+                    <li>회사소개</li>
+                    <li>보험상품안내</li>
+                    <li>마이페이지</li>
+                    <li>고객센터</li>
+                    <li>보험료안내</li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <section>
+                <img src='./img/main.png'> <!--./의 뜻은 지금 있는 파일의 하위 파일인 -->
+            </section>
+            <aside>
+                <ul>
+                    <li>보험료계산하기</li>
+                    <li>손해보험FAQ</li>
+                </ul>
+            </aside>
+        </div>
+        <div class="clear">
+            <footer>
+                <div id="address">
+                    대표이사 : 김가천 | 사업자 등록번호 : 123-12-1234
+                </div>
+                <div id="customer">
+                    고객센터 1588-1234
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
