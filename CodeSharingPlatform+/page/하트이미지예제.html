@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 하트 이미지 예제</title>
+    <style>
+          .top {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .navbar {
+            margin : 0px;
+            background-color: #2c2e52;
+            height: 60px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 50px; 
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .navbar .icon {
+            color: white;
+            font-size: 18px;
+            margin-right: 70px;
+            margin-left: auto;
+
+        }
+        .navbar .icon a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .icon a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            height: 100%;
+        }
+        .code-container {
+            background-color: #2b2b2b;
+            color: #f8f8f2;
+            padding: 5px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+            flex: 1;
+            margin: 80px;
+            margin-top: 25px;
+            margin-left: 40px;
+            overflow-x: auto;
+        }
+        .code-container .tag {
+            color: #569cd6;
+        }
+        .code-container .style {
+            color: yellow;
+        }
+        .code-container .number {
+            color: lightgreen ;
+        }
+        .code-container .value {
+            color: rgb(155, 86, 7) ;
+        }
+        .code-container .thrtjd {
+            color: skyblue ;
+        }
+        .code-container .pink {
+            color: pink ;
+        }
+        .description {
+            padding: 10px;
+            flex: 1;
+        }
+        .description h1 {
+            font-size: 24px;
+        }
+        .description p {
+            margin: 10px 0;
+        }
+        .large-text {
+            font-size: 24px;
+        }
+        .no-select {
+            -webkit-user-select: none; 
+            -moz-user-select: none;   
+            -ms-user-select: none;     
+            user-select: none;         
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap; 
+            word-wrap: break-word; 
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="navbar">
+        <div class="logo" style="margin-left: 150px;">코공플</div>
+        <div class="menu">
+            <span style="margin: 0px 30px;"><a href="../index.html">홈</a></span>
+            <span style="margin-right:30px; margin-left: 5px;"><a href="">인기코드</a></span>
+            <a href="">고객센터</a>
+        </div>
+        <div class="icon"><a href="../login.html">⊙</a></div>
+    </div>
+</div>
+
+
+    <div class="body">
+    <div class="container">
+        <div class="code-container">
+            <pre>
+            &lt;<span class="tag">style</span>&gt;<br>
+            <span class="style">.heart &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">position: <span class="value">relative</span></span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">width: </span><span class="number">200px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">height: </span><span class="number">180px</span>;<br>
+            <span class="style"> &#125;</span><br>
+            <span class="style">.circle &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">position: <span class="value">absolute</span></span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">width: </span><span class="number">100px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">height: </span><span class="number">100px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">background: </span><span class="number">url</span><span class="pink">&lpar;</span><span class="value">이미지링크</span><span class="pink">&rpar;</span><span class="value"> no-repeat</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">background-size: </span><span class="number">200px</span><span class="number"> 180px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">border-radius: </span><span class="number">50%</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">border: </span><span class="number">0.1px</span><span class="value"> solid</span><span class="thrtjd"> rgb</span><span class="pink">&lpar;</span><span class="number">200</span>,<span class="number"> 0</span>,<span class="number"> 0</span><span class="pink">&rpar;</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">box-shadow: </span><span class="number">0 </span><span class="number">0 </span><span class="number">10px</span><span class="thrtjd"> rgba</span><span class="pink">&lpar;</span><span class="number">255</span>,<span class="number"> 0</span>,<span class="number"> 0</span>,<span class="number"> 0.7</span><span class="pink">&rpar;</span>;<br>
+            <span class="style"> &#125;</span><br>
+            <span class="style">.left &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">top: <span class="number">0</span></span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">left: </span><span class="number">0</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">background-position: </span><span class="value"> left top</span>;<br>
+            <span class="style"> &#125;</span><br>
+            <span class="style">.right &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">top: <span class="number">0</span></span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">right: </span><span class="number">0</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">background-position: </span><span class="value"> right top</span>;<br>
+            <span class="style"> &#125;</span><br>
+            <span class="style">.bottom &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">position: <span class="value">absolute</span></span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">top: </span><span class="number">50px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">left: </span><span class="number">0</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">width: </span><span class="number">100%</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">height: </span><span class="number">130px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">background: </span><span class="number">url</span><span class="pink">&lpar;</span><span class="value">이미지링크</span><span class="pink">&rpar;</span><span class="value"> no-repeat</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">background-size: </span><span class="number">200px</span><span class="number"> 180px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">background-position: </span><span class="value">center bottom</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">border-radius: </span><span class="number">0</span><span class="number"> 0</span><span class="number"> 150px </span><span class="number">150px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">border-bottom: </span><span class="number">0.1px</span><span class="value"> solid</span><span class="thrtjd"> rgb</span><span class="pink">&lpar;</span><span class="number">200</span>,<span class="number"> 0</span>,<span class="number"> 0</span><span class="pink">&rpar;</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">border-left: </span><span class="number">0.1px</span><span class="value"> solid</span><span class="thrtjd"> rgb</span><span class="pink">&lpar;</span><span class="number">200</span>,<span class="number"> 0</span>,<span class="number"> 0</span><span class="pink">&rpar;</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">border-right: </span><span class="number">0.1px</span><span class="value"> solid</span><span class="thrtjd"> rgb</span><span class="pink">&lpar;</span><span class="number">200</span>,<span class="number"> 0</span>,<span class="number"> 0</span><span class="pink">&rpar;</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">box-shadow: </span><span class="number">10px </span><span class="thrtjd">rgba</span><span class="pink">&lpar;</span><span class="number">255</span>,<span class="number"> 0</span>,<span class="number"> 0</span><span class="pink">&rpar;</span>;<br>
+            <span class="style"> &#125;</span><br>
+            &lt;/<span class="tag">style</span>&gt;<br>
+            <br><br>
+            &lt;<span class="tag">body</span>&gt;<br>
+            &lt;<span class="tag">div</span><span class="thrtjd"> class</span>=<span class="value">"heart"</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">div</span><span class="thrtjd"> class</span>=<span class="value">"circle left"</span>&gt;&lt;/<span class="tag">div</span>&gt;<br><br>
+            &nbsp;&nbsp;&lt;<span class="tag">div</span><span class="thrtjd"> class</span>=<span class="value">"circle right"</span>&gt;&lt;/<span class="tag">div</span>&gt;<br><br>
+            &nbsp;&nbsp;&lt;<span class="tag">div</span><span class="thrtjd"> class</span>=<span class="value">"bottom"</span>&gt;&lt;/<span class="tag">div</span>&gt;<br><br>
+            &lt;/<span class="tag">div</span>&gt;<br>
+            &lt;/<span class="tag">body</span>&gt;<br>
+            <span class="no-select" style="color: gray; float: right;">⊙코드를 복사하여 사용하세요.</span>
+        </div>
+    </pre>
+        <div class="description">
+            <span class="large-text">
+            <h1>하트 이미지 예제 코드</h1>
+            <p>이 코드는 HTML과 CSS를 사용하여 하트 모양의 이미지를 만들어내는 것이 주요 목적입니다. </p>
+            <p>CSS의 여러 가지 속성을 활용하여 각 요소의 크기, 위치, 배경 이미지 등을 설정하여 하트 모양을 형성합니다.</p>
+            <p>이를 통해 웹페이지에서 하트 모양을 표현하고자 할 때 사용할 수 있습니다.</p>
+        </span>
+        <br>
+        <h1 style="margin-top: 30px;">예제 이미지</h1>
+        <span style="margin-top: 0px ;">
+        <image src='./img/하트이미지예제.png' width="100%" height="45%"></image> 
+        </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

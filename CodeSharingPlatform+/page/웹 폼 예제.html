@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>웹 폼 예제</title>
+    <style>
+           .top {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .navbar {
+            margin : 0px;
+            background-color: #2c2e52;
+            height: 60px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 50px; 
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .navbar .icon {
+            color: white;
+            font-size: 18px;
+            margin-right: 70px;
+            margin-left: auto;
+
+        }
+        .navbar .icon a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .icon a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            height: 90%;
+        }
+        .code-container {
+            background-color: #2b2b2b;
+            color: #f8f8f2;
+            padding: 5px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+            flex: 1;
+            margin: 80px;
+            margin-top: 25px;
+            margin-left: 40px;
+            overflow-x: auto;
+        }
+        .code-container .tag {
+            color: #569cd6;
+        }
+        .code-container .style {
+            color: yellow;
+        }
+        .code-container .number {
+            color: lightgreen ;
+        }
+        .code-container .value {
+            color: rgb(155, 86, 7) ;
+        }
+        .code-container .thrtjd {
+            color: skyblue ;
+        }
+        .code-container .pink {
+            color: pink ;
+        }
+        .description {
+            padding: 10px;
+            flex: 1;
+        }
+        .description h1 {
+            font-size: 24px;
+        }
+        .description p {
+            margin: 10px 0;
+        }
+        .large-text {
+            font-size: 24px;
+        }
+        .no-select {
+            -webkit-user-select: none; 
+            -moz-user-select: none;   
+            -ms-user-select: none;     
+            user-select: none;         
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap; 
+            word-wrap: break-word; 
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="navbar">
+        <div class="logo" style="margin-left: 150px;">코공플</div>
+        <div class="menu">
+            <span style="margin: 0px 30px;"><a href="../index.html">홈</a></span>
+            <span style="margin-right:30px; margin-left: 5px;"><a href="">인기코드</a></span>
+            <a href="">고객센터</a>
+        </div>
+        <div class="icon"><a href="../login.html">⊙</a></div>
+    </div>
+</div>
+
+
+    <div class="body">
+    <div class="container">
+        <div class="code-container">
+            <pre>
+            &lt;!<span class="tag">doctype</span> <span style="color: skyblue;">html</span>&gt;<br>
+            &lt;<span class="tag">html</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">head</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">title</span>&gt;웹 폼 예제&lt;/<span class="tag">title</span>&gt;<br>
+            &nbsp;&nbsp;&lt;/<span class="tag">head</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">body</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;<span class="tag">form</span><span class="thrtjd"> name</span>=<span class="value">"sform"</span><span class="thrtjd">
+            &nbsp;&nbsp;&nbsp;&nbsp;action</span>=<span class="value">"폼 데이터를 제출할 URL을 작성하세요."</span>
+            <span class="thrtjd"> method</span>=<span class="value">"gets"</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span><span class="thrtjd"> name</span>=<span class="value">"query"</span><span class="thrtjd"> type</span>=<span class="value">"text"</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span><span class="thrtjd"> type</span>=<span class="value">"submit"</span><span class="thrtjd"> value</span>=<span class="value">"검색"</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;/<span class="tag">form</span>&gt;<br>
+            &nbsp;&nbsp;&lt;/<span class="tag">body</span>&gt;<br>
+            &lt;/<span class="tag">html</span>&gt;
+            <span class="no-select" style="color: gray; float: right;">⊙코드를 복사하여 사용하세요.</span>
+        </div>
+    </pre>
+        <div class="description">
+            <span class="large-text">
+            <h1>웹 폼 코드 예제</h1>
+            <p>이 HTML 코드는 간단한 검색 폼을 정의하고 있습니다.</p>
+            <p>이 폼은 사용자로부터 입력을 받아 서버로 전송하는 역할을 합니다.</p>
+            <p>사용자가 텍스트 입력 필드에 값을 입력하고 "검색" 버튼을 클릭하면, 폼 데이터가 action 속성에 지정된 URL로 전송됩니다.</p>
+        </span>
+        <br>
+        <h1 style="margin-top: 30px;">예제 이미지</h1>
+        <span style="margin-top: 0px ;">
+        <image src='./img/웹 폼 예제.PNG' width="100%" height="45%"></image> 
+        </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS text-shadow 예제</title>
+    <style>
+          .top {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .navbar {
+            margin : 0px;
+            background-color: #2c2e52;
+            height: 60px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 50px; 
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .navbar .icon {
+            color: white;
+            font-size: 18px;
+            margin-right: 70px;
+            margin-left: auto;
+
+        }
+        .navbar .icon a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .icon a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            height: 100%;
+        }
+        .code-container {
+            background-color: #2b2b2b;
+            color: #f8f8f2;
+            padding: 5px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+            flex: 1;
+            margin: 80px;
+            margin-top: 25px;
+            margin-left: 40px;
+            overflow-x: auto;
+        }
+        .code-container .tag {
+            color: #569cd6;
+        }
+        .code-container .style {
+            color: yellow;
+        }
+        .code-container .number {
+            color: lightgreen ;
+        }
+        .code-container .value {
+            color: rgb(155, 86, 7) ;
+        }
+        .code-container .thrtjd {
+            color: skyblue ;
+        }
+        .code-container .pink {
+            color: pink ;
+        }
+        .description {
+            padding: 10px;
+            flex: 1;
+        }
+        .description h1 {
+            font-size: 24px;
+        }
+        .description p {
+            margin: 10px 0;
+        }
+        .large-text {
+            font-size: 24px;
+        }
+        .no-select {
+            -webkit-user-select: none; 
+            -moz-user-select: none;   
+            -ms-user-select: none;     
+            user-select: none;         
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap; 
+            word-wrap: break-word; 
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="navbar">
+        <div class="logo" style="margin-left: 150px;">코공플</div>
+        <div class="menu">
+            <span style="margin: 0px 30px;"><a href="../index.html">홈</a></span>
+            <span style="margin-right:30px; margin-left: 5px;"><a href="">인기코드</a></span>
+            <a href="">고객센터</a>
+        </div>
+        <div class="icon"><a href="../login.html">⊙</a></div>
+    </div>
+</div>
+
+
+    <div class="body">
+    <div class="container">
+        <div class="code-container">
+            <pre>
+            &lt;<span class="tag">style</span>&gt;<br>
+            <span class="style">h1 &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">font-size: </span><span class="number">100px</span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">font-family: </span><span class="value">"Arial Rounded MT"</span>;<br>
+            <span class="style"> &#125;</span><br>
+            <span class="style">.shadow1 &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">color: <span class="value">blue</span></span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">text-shadow: </span><span class="number">1px</span><span class="number"> 1px</span><span class="number"> 10px</span><span class="vlaue"> skyblue</span>;<br>
+            <span class="style"> &#125;</span><br>
+            <span class="style">.shadow2 &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">color: <span class="value">black</span></span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">text-shadow: </span><span class="number">5px</span><span class="number"> 5px</span><span class="number"> 3px</span><span class="vlaue"> red</span>;<br>
+            <span class="style"> &#125;</span><br>
+            <span class="style">.shadow3 &#123;</span><br>
+            &nbsp;&nbsp;<span class="thrtjd">color: <span class="value">white</span></span>;<br>
+            &nbsp;&nbsp;<span class="thrtjd">text-shadow: </span><span class="number">7px</span><span class="number"> -7px</span><span class="number"> 5px</span><span class="vlaue"> black</span>;<br>
+            <span class="style"> &#125;</span><br>
+            &lt;/<span class="tag">style</span>&gt;<br>
+            <br><br>
+            &lt;<span class="tag">body</span>&gt;<br>
+            &lt;<span class="tag">h1</span><span class="thrtjd"> class</span>=<span class="value">"shadow1"</span>&gt;내용을 입력하세요.&lt;/<span class="tag">h1</span>&gt;<br>
+            &lt;<span class="tag">h1</span><span class="thrtjd"> class</span>=<span class="value">"shadow2"</span>&gt;내용을 입력하세요.&lt;/<span class="tag">h1</span>&gt;<br>
+            &lt;<span class="tag">h1</span><span class="thrtjd"> class</span>=<span class="value">"shadow3"</span>&gt;내용을 입력하세요.&lt;/<span class="tag">h1</span>&gt;<br>
+            &lt;/<span class="tag">body</span>&gt;<br>
+            <span class="no-select" style="color: gray; float: right;">⊙코드를 복사하여 사용하세요.</span>
+        </div>
+    </pre>
+        <div class="description">
+            <span class="large-text">
+            <h1>CSS text-shadow 예제 코드</h1>
+            <p>이 코드는 CSS를 사용하여 텍스트에 그림자 효과를 부여합니다.</p>
+            <p>shadow1 클래스는 텍스트의 색상을 파란색으로 지정하고, 텍스트 주위에 하늘색 그림자를 만듭니다.</p>
+            <p>shadow2 클래스는 텍스트의 색상을 검은색으로 설정하고, 텍스트 주위에 작은 빨간색 그림자를 만듭니다.</p>
+            <p>shadow3 클래스는 텍스트의 색상을 흰색으로 설정하고, 텍스트 주위에 검은색 그림자를 만듭니다.</p>
+        </span>
+        <br>
+        <h1 style="margin-top: 30px;">예제 이미지</h1>
+        <span style="margin-top: 0px ;">
+        <image src='./img/text-shadowd예제.PNG' width="70%" height="50%"></image> 
+        </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

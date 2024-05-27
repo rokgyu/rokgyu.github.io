@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 폼 예제</title>
+    <style>
+           .top {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .navbar {
+            margin : 0px;
+            background-color: #2c2e52;
+            height: 60px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 50px; 
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .navbar .icon {
+            color: white;
+            font-size: 18px;
+            margin-right: 70px;
+            margin-left: auto;
+
+        }
+        .navbar .icon a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .icon a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            height: 90%;
+        }
+        .code-container {
+            background-color: #2b2b2b;
+            color: #f8f8f2;
+            padding: 5px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+            flex: 1;
+            margin: 80px;
+            margin-top: 25px;
+            margin-left: 40px;
+            overflow-x: auto;
+        }
+        .code-container .tag {
+            color: #569cd6;
+        }
+        .code-container .style {
+            color: yellow;
+        }
+        .code-container .number {
+            color: lightgreen ;
+        }
+        .code-container .value {
+            color: rgb(155, 86, 7) ;
+        }
+        .code-container .thrtjd {
+            color: skyblue ;
+        }
+        .code-container .pink {
+            color: pink ;
+        }
+        .description {
+            padding: 10px;
+            flex: 1;
+        }
+        .description h1 {
+            font-size: 24px;
+        }
+        .description p {
+            margin: 10px 0;
+        }
+        .large-text {
+            font-size: 24px;
+        }
+        .no-select {
+            -webkit-user-select: none; 
+            -moz-user-select: none;   
+            -ms-user-select: none;     
+            user-select: none;         
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap; 
+            word-wrap: break-word; 
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="navbar">
+        <div class="logo" style="margin-left: 150px;">코공플</div>
+        <div class="menu">
+            <span style="margin: 0px 30px;"><a href="../index.html">홈</a></span>
+            <span style="margin-right:30px; margin-left: 5px;"><a href="">인기코드</a></span>
+            <a href="">고객센터</a>
+        </div>
+        <div class="icon"><a href="../login.html">⊙</a></div>
+    </div>
+</div>
+
+
+    <div class="body">
+    <div class="container">
+        <div class="code-container">
+            <pre>
+            &lt;!<span class="tag">doctype</span> <span style="color: skyblue;">html</span>&gt;<br>
+            &lt;<span class="tag">html</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">head</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">title</span>&gt;로그인 폼 예제&lt;/<span class="tag">title</span>&gt;<br>
+            &nbsp;&nbsp;&lt;/<span class="tag">head</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">body</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">form</span><span class="thrtjd"> name</span>=<span class="value">"loginform"</span><span class="thrtjd">
+            &nbsp;&nbsp;&nbsp;&nbsp;action</span>=<span class="value">"로그인 사이트을 입력하세요."</span>
+            <span class="thrtjd"> method</span>=<span class="value">"post"</span>&gt;<br>
+            &nbsp;&nbsp;  아이디: &lt;<span class="tag">input</span><span class="thrtjd"> name</span>=<span class="value">"username"</span><span class="thrtjd"> 
+                type</span>=<span class="value">"text"</span>&gt;<br>
+                &lt;<span class="tag">br</span>&gt;<br>
+            &nbsp;&nbsp; 비밀번호: &lt;<span class="tag">input</span><span class="thrtjd"> name</span>=<span class="value">"password"</span><span class="thrtjd"> 
+                type</span>=<span class="value">"password"</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="tag">input</span><span class="thrtjd"> type</span>=<span class="value">"submit"</span><span class="thrtjd"> value</span>=<span class="value">"로그인"</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">form</span>&gt;<br>
+            &nbsp;&nbsp;&lt;/<span class="tag">body</span>&gt;<br>
+            &lt;/<span class="tag">html</span>&gt;
+            <span class="no-select" style="color: gray; float: right;">⊙코드를 복사하여 사용하세요.</span>
+        </div>
+    </pre>
+        <div class="description">
+            <span class="large-text">
+            <h1>로그인 폼 코드 예제</h1>
+            <p>이 코드는 웹 페이지에 로그인 폼을 표시하고, 사용자가 아이디와 비밀번호를 입력한 후 "로그인" 버튼을 클릭하면 해당 정보를 지정된 서버로 제출하는 동작을 수행합니다.</p>
+            <p>post 방식으로 제출된 데이터는 URL상에서 보이지 않기 때문에 보안적입니다.</p>
+            <p>사용자가 아이디와 비밀번호를 입력한 후 "로그인" 버튼을 클릭하면, 입력된 데이터가 서버로 전송되어 로그인 처리가 이루어집니다.</p>
+        </span>
+        <br>
+        <h1 style="margin-top: 30px;">예제 이미지</h1>
+        <span style="margin-top: 0px ;">
+        <br>
+        <br>
+        <image src='./img/로그인 폼 예제.PNG' width="100%" height="25%"></image> 
+        </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
