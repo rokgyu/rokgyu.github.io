@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            반응형 웹 만들기
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 960px;
+            margin: 0 auto;
+        }
+        #menu{
+            width: 300px;
+            float: left;
+        }
+        #content{
+            width : 660px;
+            float : right;
+        }
+        li{
+            list-style: none;
+        }
+        @media screen and (max-width : 767px){
+            body{
+                width: auto;
+            }
+            #menu{
+                width: auto;
+                float: none;
+            }
+            #content{
+                width: auto;
+                float: none;
+            }
+        }
+    </style>
+    <body>
+       
+  <div id="content">
+    <img src="./img/main.PNG">
+    <h3>푸른 하늘</h3>
+    <P>길가나 들에서 자라는 풀로써 꽃은 9월에 피고 연한 녹색 또는 자주색입니다.</P>
+
+<p>고양이가 매우 좋아하는 물건이기에 고양이와 연관한 소재로 많이 나타난다. 단순히 고양이뿐 아니라 고양이 속성이 있는 인물들에게도 먹히는 듯하다</p>
+
+<p>한자로는 구미초라고 한다.</p>
+
+</div>
+<br>
+<div id="menu">
+    <ul>
+        <li>강아지풀 |</li>
+        <li>패랭이꽃 |</li>
+        <li>양귀비꽃 |</li>
+    </ul>
+</div>
+</body>
+</html>
